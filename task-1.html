@@ -6,11 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 1</title>
     <link rel="stylesheet" href="./css/common.css" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      p a {
+        color: #4b4b70;
+        text-decoration: none;
+      }
+
+      #categories {
+        list-style: none;
+        padding: 0;
+        margin: 24px;
+        width: 392px;
+      }
+
+      .item {
+        list-style: none;
+        width: 392px;
+        height: auto;
+        box-sizing: border-box;
+        padding: 16px;
+        margin-bottom: 24px;
+        background: #f6f6fe;
+        border-radius: 8px;
+      }
+
+      .item h2 {
+        margin: 0 0 16px;
+
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.04em;
+
+        color: #2e2f42;
+      }
+
+
+      .item > ul {
+        list-style: none;
+
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+
+      .item > ul > li {
+        height: 40px;
+
+        display: flex;
+        align-items: center;
+
+        box-sizing: border-box;
+
+        padding: 0 16px;
+
+        border: 1px solid #8d8d95;
+        border-radius: 4px;
+
+        background: transparent;
+
+        font-size: 16px;
+        line-height: 24px;
+
+        color: #45455f;
+      }
+
+
+      .item > ul > li:hover {
+        background: #eeeeff;
+      }
+
+    </style>
   </head>
+
   <body>
     <p><a href="./index.html">Go back</a></p>
 
     <ul id="categories">
+
       <li class="item">
         <h2>Animals</h2>
 
@@ -21,15 +103,19 @@
           <li>Parrot</li>
         </ul>
       </li>
+
+
       <li class="item">
         <h2>Products</h2>
 
         <ul>
           <li>Bread</li>
-          <li>Prasley</li>
+          <li>Parsley</li>
           <li>Cheese</li>
         </ul>
       </li>
+
+
       <li class="item">
         <h2>Technologies</h2>
 
@@ -41,6 +127,7 @@
           <li>Node.js</li>
         </ul>
       </li>
+
     </ul>
 
     <script src="./js/task-1.js" type="module"></script>
